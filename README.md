@@ -1,33 +1,35 @@
 # CP3-Java
-#Projeto de Gestão de Brinquedos
-Descrição do Projeto
+**Projeto de Gestão de Brinquedos**
+
+**Descrição do Projeto**
 
 Este projeto consiste em um sistema de gestão de brinquedos para uma empresa voltada para crianças até 12 anos. O sistema foi desenvolvido utilizando o framework Spring Boot configurado com o Maven em linguagem Java. Ele permite realizar operações básicas de um CRUD (Create, Read, Update e Delete) para gerenciar informações sobre os brinquedos, incluindo nome, tipo, classificação, tamanho e preço.
 
-IDE Utilizado
+**IDE Utilizado**
 
 O projeto foi desenvolvido utilizando o Eclipse como ambiente de desenvolvimento integrado (IDE).
 
-Configuração Inicial do Spring Initializr
+**Configuração Inicial do Spring Initializr**
 
-Dependências do Projeto
+**Dependências do Projeto**
 
-As principais dependências utilizadas no projeto são:
+**As principais dependências utilizadas no projeto são:**
 
 Spring Boot Starter Web
 Spring Data JPA
 Lombok
 
-Estrutura do Projeto
+**Estrutura do Projeto**
 
-A estrutura do projeto segue os padrões do Spring Boot, com os seguintes pacotes principais:
+**A estrutura do projeto segue os padrões do Spring Boot, com os seguintes pacotes principais:**
 
 com.lego.controller: Contém os controladores responsáveis por receber as requisições HTTP e direcioná-las para as operações adequadas.
 com.lego.model: Contém as entidades JPA que representam os brinquedos.
 com.lego.repository: Contém as interfaces de repositório que permitem acessar e manipular os dados no banco de dados.
-Endpoints
 
-O projeto oferece os seguintes endpoints para operações CRUD:
+**Endpoints**
+
+**O projeto oferece os seguintes endpoints para operações CRUD:**
 
 GET /brinquedos: Retorna a lista de todos os brinquedos cadastrados.
 
@@ -39,11 +41,11 @@ PUT /brinquedos/{id}: Atualiza as informações de um brinquedo existente com o 
 
 DELETE /brinquedos/{id}: Exclui um brinquedo existente com o ID fornecido.
 
-Testes com Postman
+**Testes com Postman**
 
 Os testes dos endpoints podem ser realizados utilizando o software Postman. Abaixo estão os exemplos de uso dos endpoints:
 
-GET /brinquedos
+**GET /brinquedos**
 
 Para obter a lista de brinquedos cadastrados:
 
@@ -55,7 +57,7 @@ Para obter as informações de um brinquedo específico, substitua {id} pelo ID 
 
 GET localhost:8080/brinquedos/1
 
-POST /brinquedos
+**POST /brinquedos**
 
 Para criar um novo brinquedo, envie uma requisição POST com os dados do brinquedo no corpo da requisição:
 
@@ -70,7 +72,7 @@ Body:
   "preco": 49.99
 }
 
-PUT /brinquedos/{id}
+**PUT /brinquedos/{id}**
 
 Para atualizar as informações de um brinquedo existente, substitua {id} pelo ID do brinquedo a ser atualizado e envie uma requisição PUT com os novos dados do brinquedo no corpo da requisição:
 
@@ -85,17 +87,17 @@ Body:
   "preco": 59.99
 }
 
-DELETE /brinquedos/{id}
+**DELETE /brinquedos/{id}**
 
 Para excluir um brinquedo existente, substitua {id} pelo ID do brinquedo a ser excluído:
 
 DELETE localhost:8080/brinquedos/1
 
-Banco de Dados
+**Banco de Dados**
 
 O projeto utiliza um banco de dados Oracle, com a tabela tb_brinquedos para armazenar as informações dos brinquedos. As colunas obrigatórias na tabela são: Id, Nome, Tipo, Classificacao, Tamanho e Preco.
 
-Observações
+**Observações**
 
 O projeto utiliza o padrão de retorno de informações HATEOAS (nível de maturidade 3 de projeto).
 
@@ -103,7 +105,7 @@ O Lombok foi utilizado para reduzir a quantidade de código boilerplate.
 
 As operações de persistência no banco de dados são realizadas utilizando as funcionalidades oferecidas pelo Spring Data JPA.
 
-Autores
+**Autores**
 
 Este projeto foi desenvolvido por:
 
